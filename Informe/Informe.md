@@ -16,24 +16,6 @@ Ana María Orozco Reyes
 ---
 
 
-## 📘**Documentación del Desarrollo**
-
-Descripción detallada del proceso seguido en el laboratorio:
-
-Objetivos del proyecto.
-
-Procedimiento realizado paso a paso.
-
-Decisiones de diseño tomadas.
-
-Explicación del funcionamiento general del script move_turtle.py.
-
-Aquí tienes la **sección completa de “Documentación del desarrollo”** escrita en **Markdown**, basada exclusivamente en el funcionamiento del código que compartiste (**move_turtle.py** y **draw_initials.py**), tal como pide la actividad.
-
-Puedes copiarla directamente en tu README:
-
----
-
 ## 📘 **Documentación del Desarrollo**
 
 ### **1. Objetivo General del Proyecto**
@@ -178,11 +160,27 @@ Ambas soluciones están desarrolladas como nodos ROS 2 independientes, cumplen l
 ---
 
 ## 🧭 Diagrama de Flujo (Mermaid)
-%% Aquí debes incluir el diagrama de flujo solicitado
+
 
 ---
 
 ## 🧩 Código Fuente
+
+<p align="center">
+<img src="Imagenes/diagramaflujomove_turtle.png" alt="UNAL" width="600"/>
+    <br>
+  <em>Diagramaflujomove_turtle.</em>
+</p>
+
+
+<p align="center">
+<img src="Imagenes/diagramaflujodraw_initials.png" alt="UNAL" width="600"/>
+    <br>
+  <em>Diagrama de flujo de draw_initials.</em>
+</p>
+
+
+
 
 
 ### **Código: `move_turtle.py`**
