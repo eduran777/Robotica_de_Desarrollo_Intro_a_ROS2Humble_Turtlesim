@@ -1,6 +1,6 @@
 # Informe de Laboratorio 04 – Robótica de Desarrollo (ROS 2 Humble – Turtlesim)
 <p align="center">
-<img src="Imagenes/logo_3.png" alt="UNAL" width="600"/>
+<img src="Imágenes/logo_3.png" alt="UNAL" width="600"/>
 </p>
 
 
@@ -167,17 +167,26 @@ Ambas soluciones están desarrolladas como nodos ROS 2 independientes, cumplen l
 ## 🧩 Código Fuente
 
 <p align="center">
-<img src="Imagenes/diagramaflujomove_turtle.png" alt="UNAL" width="600"/>
+<img src="Imágenes/diagramaflujomove_turtle.png" alt="UNAL" width="600"/>
     <br>
   <em>Diagramaflujomove_turtle.</em>
 </p>
 
+### Diagrama de flujo – `move_turtle.py`
+Este diagrama representa el funcionamiento del nodo que permite mover la tortuga en Turtlesim mediante el teclado.  
+El programa lee continuamente una tecla y, según su valor, ejecuta una acción: avanzar, retroceder, girar, detenerse o finalizar la ejecución. El nodo publica constantes de velocidad en el tópico `/turtle1/cmd_vel`, permitiendo un control directo y en tiempo real.
+
+
 
 <p align="center">
-<img src="Imagenes/diagramaflujodraw_initials.png" alt="UNAL" width="600"/>
+<img src="Imágenes/diagramaflujodraw_initials.png" alt="UNAL" width="600"/>
     <br>
   <em>Diagrama de flujo de draw_initials.</em>
 </p>
+
+### Diagrama de flujo – `draw_initials.py`
+Este diagrama muestra el proceso del nodo encargado de dibujar letras con la tortuga.  
+El programa espera teclas asociadas a diferentes letras, reposiciona la tortuga usando servicios de Turtlesim, activa la pluma y ejecuta rutinas de movimiento para trazar cada carácter. El usuario puede dibujar en dos renglones distintos y terminar el programa presionando `q`.
 
 
 
