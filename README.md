@@ -355,6 +355,11 @@ Ambos scripts ejemplifican el uso de ROS2 en Turtlesim:
 
 ## 🎬 Video Explicativo
 
+LINK VIDEO:
+[https://drive.google.com/file/d/1M4rrM5JdrxIQ2ZSLGHn4kaLD4ZDbSkym/view?usp=sharing
+](https://drive.google.com/file/d/1M4rrM5JdrxIQ2ZSLGHn4kaLD4ZDbSkym/view?usp=sharing
+)
+
 
 
 
