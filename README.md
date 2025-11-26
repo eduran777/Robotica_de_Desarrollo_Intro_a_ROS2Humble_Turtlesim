@@ -355,22 +355,6 @@ Ambos scripts ejemplifican el uso de ROS2 en Turtlesim:
 
 ## 🎬 Video Explicativo
 
-Enlace al video (máx. 10 minutos), siguiendo esta estructura:
 
-Introducción oficial del laboratorio LabSIR Intro LabSIR.
 
-Presentación del equipo (integrantes y aportes).
 
-Análisis, desarrollo e implementación
-
-Explicación del procedimiento.
-
-Explicación del código.
-
-Evidencia del funcionamiento.
-
----
-
-## Referencias
-
-Reflexiones y aprendizajes del laboratorio.
