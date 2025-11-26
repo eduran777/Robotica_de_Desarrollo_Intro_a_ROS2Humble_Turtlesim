@@ -161,15 +161,10 @@ Ambas soluciones están desarrolladas como nodos ROS 2 independientes, cumplen l
 
 ## 🧭 Diagrama de Flujo (Mermaid)
 
-
----
-
-## 🧩 Código Fuente
-
 <p align="center">
 <img src="Imágenes/diagramaflujomove_turtle.png" alt="UNAL" width="600"/>
     <br>
-  <em>Diagramaflujomove_turtle.</em>
+  <em>Diagrama de flujo de move_turtle.</em>
 </p>
 
 ### Diagrama de flujo – `move_turtle.py`
@@ -188,9 +183,9 @@ El programa lee continuamente una tecla y, según su valor, ejecuta una acción:
 Este diagrama muestra el proceso del nodo encargado de dibujar letras con la tortuga.  
 El programa espera teclas asociadas a diferentes letras, reposiciona la tortuga usando servicios de Turtlesim, activa la pluma y ejecuta rutinas de movimiento para trazar cada carácter. El usuario puede dibujar en dos renglones distintos y terminar el programa presionando `q`.
 
+---
 
-
-
+## 🧩 Código Fuente
 
 ### **Código: `move_turtle.py`**
 
