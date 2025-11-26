@@ -36,8 +36,8 @@ class TurtleWriter(Node):
         self.teleport.wait_for_service()
         self.pen.wait_for_service()
 
-        self.x_top = 2.0
-        self.x_bottom = 2.0
+        self.x_top = 0.5
+        self.x_bottom = 0.5
 
         self.y_top = 8.0
         self.y_bottom = 4.5
@@ -87,55 +87,86 @@ class TurtleWriter(Node):
     # ===== LETTERS =====
 
     def draw_E(self):
-        self.move(self.size, 0, 1)
+        self.move(0,2.5,(math.pi) /2.5)
+        self.move(self.size, 0, 0.7)
+        self.move(0,2.5,(math.pi) /2.5)
+        self.move(self.size, 0, 0.7)
         self.move(0,2.5,(math.pi / 2) /2.5)
         self.move(self.size, 0, 0.5)
         self.move(0,2.5,(math.pi / 2) /2.5)
-        self.move(self.size, 0, 1)
-        self.move(-self.size, 0, 1)
-        self.move(0,2.5,(3*math.pi / 2) /2.5)
+        self.move(self.size, 0, 0.7)
+        self.move(0,2.5,(math.pi) /2.5)
+        self.move(self.size, 0, 0.7)
+        self.move(0,2.5,(math.pi / 2) /2.5)
         self.move(self.size, 0, 0.5)
         self.move(0,2.5,(math.pi / 2) /2.5)
-        self.move(self.size, 0, 1)
+        self.move(self.size, 0, 0.7)
+        
 
 
     def draw_D(self):
-        self.go_to(self.x_top-10, self.y_top,2*math.pi)
+        self.move(0,2.5,(math.pi/2) /2.5)
         self.move(self.size, 0, 1)
-        self.move(0, 2.5, 0.5)
-        self.move(self.size, 0, 0.7)
-        self.move(0, 2.5, 0.5)
-        self.move(-self.size, 0, 1)
+        self.move(0,2.5,(math.pi/2) /2.5)
+        self.move(self.size, 2, (math.pi) /2)
+
+
 
     def draw_J(self):
+        self.move(self.size, 0, 0.5)
+        self.move(0,2.5,(math.pi) /2.5)
+        self.move(self.size, 0, 0.5)
+        self.move(0,-2.5,(math.pi/2) /2.5)
         self.move(self.size, 0, 1)
-        self.move(0, 2.5, 0.6)
-        self.move(self.size * 0.5, 0, 0.5)
+        self.move(self.size, -4, (math.pi) /4)
+     
 
     def draw_A(self):
+        self.move(0,2.5,(math.pi/2) /2.5)
+        # Left vertical down
         self.move(self.size, 0, 1)
-        self.move(0, 2.5, 0.6)
+        self.move(0,-2.5,(math.pi) /2.5)
         self.move(self.size, 0, 1)
-        self.move(0, -2.5, 0.4)
-        self.move(-self.size * 0.6, 0, 0.5)
+        self.move(0,-2.5,(math.pi/2) /2.5)
+        self.move(self.size, 0, 0.7)
+        self.move(0,-2.5,(math.pi/2) /2.5)
+        self.move(self.size, 0, 1)
+        self.move(0,-2.5,(math.pi) /2.5)
+        self.move(self.size, 0, 0.4)
+        self.move(0,2.5,(math.pi/2) /2.5)
+        self.move(self.size, 0, 0.7)
+
 
     def draw_M(self):
+        self.move(0,2.5,(math.pi/2) /2.5)
         self.move(self.size, 0, 1)
-        self.move(0, 2.5, 0.6)
-        self.move(self.size, 0, 0.8)
-        self.move(0, -2.5, 1)
+        self.move(0,-2.5,(math.pi) /2.5)
+        self.move(self.size, 0, 1)
+        self.move(0,-2.5,((math.pi/2)+(math.pi/4)) /2.5)
+        self.move(self.size, 0, 0.4)
+        self.move(0,2.5,((math.pi/4)+(math.pi/4)) /2.5)
+        self.move(self.size, 0, 0.4)
+        self.move(0,-2.5,((math.pi/2)+(math.pi/4)) /2.5)
+        self.move(self.size, 0, 1)
+
+       
 
     def draw_O(self):
-        for _ in range(4):
-            self.move(self.size, 0, 0.6)
-            self.move(0, 2.5, 0.5)
+        omega = 2.5
+        full_circle_time = (2 * math.pi) / omega
+        self.move(self.size, omega, full_circle_time)
 
     def draw_R(self):
+        self.move(0,2.5,(math.pi/2) /2.5)
         self.move(self.size, 0, 1)
-        self.move(0, 2.5, 0.6)
-        self.move(self.size * 0.8, 0, 0.5)
-        self.move(0, 2.5, 0.5)
-        self.move(-self.size * 0.6, 0, 0.6)
+        self.move(0,-2.5,(math.pi) /2.5)
+        self.move(self.size, 0, 1)
+        self.move(0,-2.5,(math.pi/2) /2.5)
+        self.move(self.size, -4, (math.pi) /4)
+        self.move(0,2.5,((math.pi/2)+(math.pi/4)) /2.5)
+        self.move(self.size, 0, 0.8)
+
+        
 
     def run(self):
         # Force start position
