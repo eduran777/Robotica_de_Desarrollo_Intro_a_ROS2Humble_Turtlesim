@@ -1,6 +1,6 @@
 # Informe de Laboratorio 04 – Robótica de Desarrollo (ROS 2 Humble – Turtlesim)
 <p align="center">
-<img src="Imágenes/logo_3.png" alt="UNAL" width="600"/>
+<img src="../Imágenes/logo_3.png" alt="UNAL" width="600"/>
 </p>
 
 
