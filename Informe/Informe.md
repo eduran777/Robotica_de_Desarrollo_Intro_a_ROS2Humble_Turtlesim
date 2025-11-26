@@ -162,7 +162,7 @@ Ambas soluciones están desarrolladas como nodos ROS 2 independientes, cumplen l
 ## 🧭 Diagrama de Flujo (Mermaid)
 
 <p align="center">
-<img src="Imágenes/diagramaflujomove_turtle.png" alt="UNAL" width="600"/>
+<img src="../Imágenes/diagramaflujomove_turtle.png" alt="UNAL" width="600"/>
     <br>
   <em>Diagrama de flujo de move_turtle.</em>
 </p>
@@ -174,7 +174,7 @@ El programa lee continuamente una tecla y, según su valor, ejecuta una acción:
 
 
 <p align="center">
-<img src="Imágenes/diagramaflujodraw_initials.png" alt="UNAL" width="600"/>
+<img src="../Imágenes/diagramaflujodraw_initials.png" alt="UNAL" width="600"/>
     <br>
   <em>Diagrama de flujo de draw_initials.</em>
 </p>
